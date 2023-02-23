@@ -14,11 +14,13 @@ def main():
             if n%p == 0:
                 tempArr.append(p)
                 sum += 1
-        if sum > maxLen:
+        #print(n , sum , tempArr)
+        if sum >= maxLen:
             if n > mainEl:
                 maxlen = sum
                 mainEl = n
-    print(mainEl, maxlen)
+        print(maxlen , mainEl)
+    #print(mainEl, maxlen)
     
     finalArr
 
